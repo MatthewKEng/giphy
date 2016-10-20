@@ -3,8 +3,10 @@
   <head>
     <meta charset="utf-8">
     <title>Giphy Assignment</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
-    <script src="scripts/client.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js" charset="utf-8"></script>
+    <script src="scripts/module.js" charset="utf-8"></script>
+    <script src="scripts/main.controller.js" charset="utf-8"></script>
+    <script src="scripts/giphy.service.js"></script>
   </head>
   <body ng-app="giphyApp" ng-controller="GiphyController as giphy">
     <button ng-click="giphy.getRandomImage()">Feeling Lucky?</button>
@@ -19,7 +21,7 @@
     </div>
 
     <div ng-repeat="result in giphy.results track by $index">
-      <img ng-src="{{result}}">
+      <img ng-src="{{result.images.original.url}}">
     </div>
 
 
