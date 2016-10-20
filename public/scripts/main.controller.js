@@ -10,10 +10,6 @@ function GiphyController(goofy) {
   giphy.results = [];
   giphy.images = '';
 
-  // swapi.getFilms()
-  //      .then(function(films){
-  //        main.films = films;
-  //      });
 
   giphy.getRandomImage = function(){goofy.getRandomImage()
       .then(function (goof) {
@@ -37,9 +33,4 @@ function GiphyController(goofy) {
       };
     }
 
-    // $http.get(API + '/search?q=' + giphy.searchString + '&' + API_KEY)
-    //   .then(function (response) {
-    //     var arrayOfSearch = response.data.data;
-    //     arrayOfSearch.forEach(function (element) {
-    //       var search = element.images.downsized.url;
-    //       giphy.results.push(search);
+    
